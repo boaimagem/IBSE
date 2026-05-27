@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato e Ouvidoria | IBSE</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Fale com o IBSE. Acesse nossos canais de atendimento geral, Ouvidoria e o Canal de Denúncias e Integridade gerido pelo Comitê de Ética.">
+    <meta name="keywords" content="Contato IBSE, Ouvidoria IBSE, Canal de Denúncias ONG, Denúncia Anônima, Comitê de Ética, Ceilândia, Brasília">
+    <meta name="author" content="Instituto Brasileiro de Saberes e Expressões">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Link de Acessibilidade -->
+    <a href="#content" class="skip-link">
+        Pular para o conteúdo principal
+    </a>
+
+    <!-- Cabeçalho Principal -->
+    <header class="header-wrapper">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link" aria-label="IBSE - Página Inicial">
+                <img src="img/logo_page_7.png" alt="Logotipo do Instituto Brasileiro de Saberes e Expressões" class="logo-img">
+            </a>
+            
+            <button class="mobile-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav id="primary-nav" aria-label="Navegação Principal">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="quem-somos.html" class="nav-link">Quem Somos</a></li>
+                    <li><a href="areas-atuacao.html" class="nav-link">Áreas de Atuação</a></li>
+                    <li><a href="ponto-cultura.html" class="nav-link">Ponto de Cultura</a></li>
+                    <li><a href="transparencia.html" class="nav-link">Transparência</a></li>
+                    <li><a href="participe.html" class="nav-link">Participe</a></li>
+                    <li><a href="contato.html" class="nav-link active" aria-current="page">Contato & Ouvidoria</a></li>
+                    <li><a href="participe.html#apoie-direto" class="nav-link nav-btn nav-btn-accent">Apoie o IBSE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main id="content">
+        
+        <!-- Cabeçalho da Página -->
+        <section class="section section-bg-white page-header-section" aria-label="Fale Conosco">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Canais de Contato</h1>
+                    <p class="section-subtitle">Fale com nossa assessoria, envie suas dúvidas, ou registre manifestações formais em nossa Ouvidoria e Canal de Integridade.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Informações de Contato e Form Geral -->
+        <section class="section pt-0" aria-label="Informações e Contato Geral">
+            <div class="container contact-grid">
+                
+                <!-- Informações e Endereços -->
+                <div class="contact-info">
+                    <h2>Contatos Oficiais</h2>
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <span class="contact-icon" aria-hidden="true">✉️</span>
+                            <div>
+                                <strong>E-mail Principal:</strong><br>
+                                <a href="mailto:contato@saberexpressoes.org">contato@saberexpressoes.org</a>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <span class="contact-icon" aria-hidden="true">📞</span>
+                            <div>
+                                <strong>Telefone / WhatsApp:</strong><br>
+                                <a href="tel:+5561999631444">(61) 99963-1444</a>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <span class="contact-icon" aria-hidden="true">🏢</span>
+                            <div>
+                                <strong>Sede e Ponto de Cultura:</strong><br>
+                                Chácara 89, Conjunto H, Casa 02, Sol Nascente, Ceilândia - DF, CEP: 72.236-800.
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <h2>Ouvidoria Geral</h2>
+                    <p>
+                        A Ouvidoria é o canal para sugestões, reclamações sobre o atendimento, elogios a projetos ou pedidos de informação de interesse coletivo. Todas as mensagens enviadas pelo formulário ao lado são triadas em até 5 dias úteis.
+                    </p>
+                </div>
+                
+                <!-- Formulário de Contato Geral -->
+                <div class="form-container form-container-full">
+                    <div id="feedback-contato" class="form-feedback" tabindex="-1" aria-live="polite"></div>
+                    
+                    <form id="form-contato" data-feedback="feedback-contato">
+                        <div class="form-group">
+                            <label for="contact-name">Seu Nome *</label>
+                            <input type="text" id="contact-name" name="name" class="form-control" required autocomplete="name" placeholder="Ex: Maria de Souza">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-email">Endereço de E-mail *</label>
+                            <input type="email" id="contact-email" name="email" class="form-control" required autocomplete="email" placeholder="exemplo@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-subject">Assunto *</label>
+                            <select id="contact-subject" name="subject" class="form-control" required>
+                                <option value="">Selecione o assunto...</option>
+                                <option value="duvida">Dúvidas sobre Projetos</option>
+                                <option value="sugestao">Sugestões e Elogios</option>
+                                <option value="apoio">Parcerias e Apoio</option>
+                                <option value="outro">Outro assunto</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-message">Sua Mensagem *</label>
+                            <textarea id="contact-message" name="message" class="form-control" required placeholder="Digite o conteúdo da sua mensagem aqui..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Canal de Denúncias e Integridade -->
+        <section class="section section-bg-white" id="denuncia" aria-label="Canal de Integridade e Denúncia">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Canal de Denúncias & Integridade</h2>
+                    <p class="section-subtitle">Espaço seguro para comunicação de violações de ética, desvios de recursos, conflito de interesses ou descumprimento estatutário.</p>
+                </div>
+                
+                <div class="section-intro">
+                    <p>
+                        O Canal de Denúncias é gerido com total independência pelo <strong>Comitê de Ética do IBSE</strong>. Garantimos o sigilo absoluto das informações, a confidencialidade do relato e medidas protetivas que impedem qualquer tipo de retaliação a informantes de boa-fé, em conformidade com as melhores práticas de governança do Terceiro Setor.
+                    </p>
+                    <p class="color-terracotta mt-1rem">
+                        <strong>Você pode optar por realizar uma denúncia identificada ou anônima.</strong>
+                    </p>
+                </div>
+                
+                <div class="form-container form-container-lg">
+                    <div id="feedback-denuncia" class="form-feedback" tabindex="-1" aria-live="polite"></div>
+                    
+                    <form id="form-denuncia" data-feedback="feedback-denuncia">
+                        <div class="form-group">
+                            <label class="mb-1rem">Opção de Identificação *</label>
+                            <div class="flex-wrap-gap-2">
+                                <div class="form-check form-check-center">
+                                    <input type="radio" id="den-anonymous-false" name="anonymous" value="false" checked onclick="document.getElementById('whistleblower-fields').style.display='block'">
+                                    <label for="den-anonymous-false">Quero me identificar</label>
+                                </div>
+                                <div class="form-check form-check-center">
+                                    <input type="radio" id="den-anonymous-true" name="anonymous" value="true" onclick="document.getElementById('whistleblower-fields').style.display='none'">
+                                    <label for="den-anonymous-true" class="color-terracotta">Desejo enviar relato anônimo</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Campos Condicionais do Denunciante -->
+                        <div id="whistleblower-fields" class="whistleblower-box">
+                            <h3 class="color-blue-petrol mb-1rem">Dados do Comunicante</h3>
+                            <div class="form-group">
+                                <label for="den-name">Seu Nome</label>
+                                <input type="text" id="den-name" name="den_name" class="form-control" autocomplete="name" placeholder="Digite seu nome">
+                            </div>
+                            <div class="form-group form-group-half">
+                                <div>
+                                    <label for="den-email">E-mail para Contato</label>
+                                    <input type="email" id="den-email" name="den_email" class="form-control" autocomplete="email" placeholder="email@exemplo.com">
+                                </div>
+                                <div>
+                                    <label for="den-phone">Telefone</label>
+                                    <input type="tel" id="den-phone" name="den_phone" class="form-control" autocomplete="tel" placeholder="(61) 99999-9999">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Corpo do Relato -->
+                        <h3 class="color-terracotta mb-1rem">Descrição dos Fatos</h3>
+                        
+                        <div class="form-group">
+                            <label for="den-report">Descrição Detalhada do Fato Relatado *</label>
+                            <textarea id="den-report" name="report" class="form-control" required placeholder="Relate o acontecimento de forma clara e objetiva, citando o que ocorreu, quando e como..."></textarea>
+                        </div>
+                        
+                        <div class="form-group form-group-half">
+                            <div>
+                                <label for="den-date">Data aproximada do fato</label>
+                                <input type="date" id="den-date" name="den_date" class="form-control">
+                            </div>
+                            <div>
+                                <label for="den-local">Local / Território</label>
+                                <input type="text" id="den-local" name="den_local" class="form-control" placeholder="Ex: Ponto de Cultura EQNP">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="den-people">Pessoas envolvidas ou testemunhas (se houver)</label>
+                            <input type="text" id="den-people" name="den_people" class="form-control" placeholder="Ex: Nomes, Cargos ou Setores">
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input type="checkbox" id="den-integrity" name="integrity" class="consent-checkbox" required>
+                                <label for="den-integrity">Declaro de boa-fé que todas as informações aqui relatadas são verídicas e condizentes com a realidade de acordo com o meu conhecimento. *</label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-terracotta w-100">Enviar Comunicado de Ética</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer-wrapper">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>IBSE</h3>
+                <p class="footer-text-spacing">
+                    Instituto Brasileiro de Saberes e Expressões<br>
+                    Associação civil sem fins lucrativos de fomento sociocultural nacional.
+                </p>
+                <p class="footer-meta-text">
+                    CNPJ: 44.821.564/0001-38<br>
+                    Sede: Chácara 89, Conjunto H, Casa 02, Sol Nascente, Ceilândia - DF.
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Mapa do Site</h4>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="areas-atuacao.html">Áreas de Atuação</a></li>
+                    <li><a href="ponto-cultura.html">Ponto de Cultura</a></li>
+                    <li><a href="transparencia.html">Transparência</a></li>
+                    <li><a href="participe.html">Participe</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Canais</h4>
+                <ul>
+                    <li><a href="contato.html">Fale Conosco</a></li>
+                    <li><a href="contato.html#ouvidoria">Ouvidoria Geral</a></li>
+                    <li><a href="contato.html#denuncia">Canal de Denúncias</a></li>
+                    <li><a href="participe.html#voluntario">Trabalho Voluntário</a></li>
+                    <li><a href="participe.html#associado">Associação de Membros</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Instituto Brasileiro de Saberes e Expressões. Atividade regida pelo Estatuto Social e Regimento Interno vigentes.</p>
+            <div class="footer-bottom-links">
+                <a href="transparencia.html#estatuto">Estatuto Social</a>
+                <a href="transparencia.html#regimento">Regimento Interno</a>
+                <a href="contato.html#denuncia">Integridade</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Painel de Acessibilidade Flutuante -->
+    <section class="accessibility-bar" aria-label="Painel de Acessibilidade">
+        <button id="btn-contrast" class="accessibility-btn" title="Alternar Alto Contraste" aria-label="Alternar Alto Contraste">◐</button>
+        <button id="btn-text-plus" class="accessibility-btn" title="Aumentar Fonte" aria-label="Aumentar tamanho do texto">A+</button>
+        <button id="btn-text-minus" class="accessibility-btn" title="Diminuir Fonte" aria-label="Diminuir tamanho do texto">A-</button>
+        <button id="btn-reset" class="accessibility-btn" title="Redefinir Acessibilidade" aria-label="Redefinir para configurações padrão">↺</button>
+    </section>
+
+    <!-- Elemento para anúncios do leitor de tela -->
+    <div id="accessibility-announcer" class="sr-only" aria-live="polite"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

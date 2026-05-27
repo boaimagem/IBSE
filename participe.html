@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participe e Apoie | IBSE</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Saiba como apoiar o IBSE. Inscreva-se como voluntário social ou solicite sua admissão como membro efetivo da associação civil.">
+    <meta name="keywords" content="Voluntariado Brasília, Trabalhar em ONG, Membro Efetivo IBSE, Apoiar Ponto de Cultura, Lei do Voluntariado 9608, Ceilândia">
+    <meta name="author" content="Instituto Brasileiro de Saberes e Expressões">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Link de Acessibilidade -->
+    <a href="#content" class="skip-link">
+        Pular para o conteúdo principal
+    </a>
+
+    <!-- Cabeçalho Principal -->
+    <header class="header-wrapper">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link" aria-label="IBSE - Página Inicial">
+                <img src="img/logo_page_7.png" alt="Logotipo do Instituto Brasileiro de Saberes e Expressões" class="logo-img">
+            </a>
+            
+            <button class="mobile-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav id="primary-nav" aria-label="Navegação Principal">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="quem-somos.html" class="nav-link">Quem Somos</a></li>
+                    <li><a href="areas-atuacao.html" class="nav-link">Áreas de Atuação</a></li>
+                    <li><a href="ponto-cultura.html" class="nav-link">Ponto de Cultura</a></li>
+                    <li><a href="transparencia.html" class="nav-link">Transparência</a></li>
+                    <li><a href="participe.html" class="nav-link active" aria-current="page">Participe</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato & Ouvidoria</a></li>
+                    <li><a href="participe.html#apoie-direto" class="nav-link nav-btn nav-btn-accent">Apoie o IBSE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main id="content">
+        
+        <!-- Cabeçalho da Página -->
+        <section class="section section-bg-white page-header-section" aria-label="Participe e Colabore">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Participe e Apoie</h1>
+                    <p class="section-subtitle">Conecte sua força de trabalho, sua energia criativa ou sua competência técnica aos nossos projetos sociais.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Informações Gerais de Apoio -->
+        <section class="section pt-0" aria-label="Caminhos de Engajamento">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Caminhos de Engajamento</h2>
+                    <p class="section-subtitle">Escolha como colaborar com a consolidação da nossa rede comunitária de saberes.</p>
+                </div>
+                <div class="cards-grid margin-bottom-lg">
+                    <div class="card participe-card participe-card-accent">
+                        <h3 class="color-yellow-cerrado">Apoio Financeiro & Doações</h3>
+                        <p>Sua contribuição financeira direta mantém ativas as oficinas gratuitas do Ponto de Cultura Filhos do Quilombo, a compra de materiais pedagógicos e a conservação socioambiental local. Ajude a multiplicar nosso impacto.</p>
+                        <a href="#apoie-direto" class="btn btn-primary card-btn btn-accent">Como Apoiar</a>
+                    </div>
+
+                    <div class="card participe-card">
+                        <h3>Trabalho Voluntário</h3>
+                        <p>Atue diretamente em nossas oficinas socioculturais, na limpeza da Cachoeira Marimbondo, no apoio escolar a crianças ou no suporte administrativo. O serviço é regido pela Lei Federal nº 9.608/1998.</p>
+                        <a href="#voluntario" class="btn btn-secondary card-btn">Quero ser Voluntário</a>
+                    </div>
+                    
+                    <div class="card participe-card">
+                        <h3>Admissão de Membro Efetivo</h3>
+                        <p>Faça parte da estrutura deliberativa do IBSE, participando das Assembleias Gerais com direito a voto e influenciando as diretrizes de governança nacional da instituição (Art. 6º do Estatuto).</p>
+                        <a href="#associado" class="btn btn-primary card-btn">Candidatar-me a Membro</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form 1: Trabalho Voluntário -->
+        <section class="section section-bg-white" id="voluntario" aria-label="Formulário de Trabalho Voluntário">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Inscrição para Voluntariado</h2>
+                    <p class="section-subtitle">Preencha seus dados para receber o contato do nosso Comitê de Projetos.</p>
+                </div>
+                
+                <div class="form-container">
+                    <!-- Bloco de Feedback Acessível -->
+                    <div id="feedback-voluntario" class="form-feedback" tabindex="-1" aria-live="polite"></div>
+                    
+                    <form id="form-voluntario" data-feedback="feedback-voluntario">
+                        <div class="form-group">
+                            <label for="vol-name">Nome Completo *</label>
+                            <input type="text" id="vol-name" name="name" class="form-control" required autocomplete="name" placeholder="Digite seu nome completo">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vol-email">Endereço de E-mail *</label>
+                            <input type="email" id="vol-email" name="email" class="form-control" required autocomplete="email" placeholder="exemplo@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vol-phone">Telefone / WhatsApp *</label>
+                            <input type="tel" id="vol-phone" name="phone" class="form-control" required autocomplete="tel" placeholder="(61) 99999-9999">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vol-area">Área de Interesse de Apoio *</label>
+                            <select id="vol-area" name="area" class="form-control" required>
+                                <option value="">Selecione uma opção...</option>
+                                <option value="capoeira-esporte">Aulas de Capoeira e Iniciação Esportiva</option>
+                                <option value="educacao-tecnologia">Aulas de Informática, Reforço e Ciência</option>
+                                <option value="arte-cultura">Oficinas de Hip Hop, Teatro e Artesanato</option>
+                                <option value="ecologia-meioambiente">Limpeza da Cachoeira Marimbondo e Ecologia</option>
+                                <option value="social-acolhimento">Apoio a Famílias e Doações de Alimentos</option>
+                                <option value="gestao-administrativo">Administrativo, Jurídico e Comunicação</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vol-hours">Disponibilidade de Horas Semanais *</label>
+                            <input type="number" id="vol-hours" name="hours" class="form-control" required min="1" max="44" placeholder="Ex: 4">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vol-experience">Breve histórico de experiência ou motivação *</label>
+                            <textarea id="vol-experience" name="experience" class="form-control" required placeholder="Conte-nos um pouco sobre você e o motivo de se candidatar..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input type="checkbox" id="vol-terms" name="terms" class="consent-checkbox" required>
+                                <label for="vol-terms">Declaro estar ciente de que o serviço voluntário é regulamentado pela Lei Federal nº 9.608/1998, não gerando vínculo empregatício de qualquer natureza, sendo realizado de forma espontânea, não-remunerada e benevolente. *</label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-secondary w-100">Enviar Inscrição de Voluntário</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form 2: Admissão de Membros Efetivos -->
+        <section class="section" id="associado" aria-label="Formulário de Candidatura a Membro Efetivo">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Solicitação de Admissão de Membro Efetivo</h2>
+                    <p class="section-subtitle">Exclusivo para pessoas físicas que desejam se comprometer com a governança formal do IBSE (Art. 6º do Estatuto).</p>
+                </div>
+                
+                <div class="form-container">
+                    <!-- Bloco de Feedback Acessível -->
+                    <div id="feedback-associado" class="form-feedback" tabindex="-1" aria-live="polite"></div>
+                    
+                    <form id="form-associado" data-feedback="feedback-associado">
+                        <div class="form-group">
+                            <label for="member-name">Nome Completo *</label>
+                            <input type="text" id="member-name" name="name" class="form-control" required autocomplete="name" placeholder="Digite seu nome completo">
+                        </div>
+                        
+                        <div class="form-group form-group-half">
+                            <div>
+                                <label for="member-cpf">CPF *</label>
+                                <input type="text" id="member-cpf" name="cpf" class="form-control" required placeholder="000.000.000-00">
+                            </div>
+                            <div>
+                                <label for="member-rg">RG *</label>
+                                <input type="text" id="member-rg" name="rg" class="form-control" required placeholder="0.000.000 SSP/DF">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="member-birth">Data de Nascimento *</label>
+                            <input type="date" id="member-birth" name="birth" class="form-control" required autocomplete="bday">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="member-address">Endereço Residencial Completo *</label>
+                            <input type="text" id="member-address" name="address" class="form-control" required autocomplete="street-address" placeholder="Quadra, Lote, Bairro, Cidade, Estado">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="member-profession">Área Profissional / Ocupação *</label>
+                            <input type="text" id="member-profession" name="profession" class="form-control" required placeholder="Ex: Professor, Administrador, Artista">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="member-motivation">Texto de justificativa da candidatura à Assembleia *</label>
+                            <textarea id="member-motivation" name="motivation" class="form-control" required placeholder="Justifique o motivo de desejar ingressar na governança activa do IBSE..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input type="checkbox" id="member-statute" name="statute" class="consent-checkbox" required>
+                                <label for="member-statute">Declaro conhecer e aceitar integralmente os termos do Estatuto Social e do Regimento Interno do IBSE, comprometendo-me a atuar com ética, integridade e em defesa dos objetivos institucionais e do bem comum da sociedade civil. *</label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary w-100">Submeter Candidatura à Diretoria</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Apoie Direto -->
+        <section class="section section-bg-white" id="apoie-direto" aria-label="Instruções de Apoio Financeiro">
+            <div class="container">
+                <div class="manifesto-box">
+                    <h2 class="donation-title">Como doar ou firmar parceria institucional?</h2>
+                    <p class="donation-intro">
+                        O Instituto Brasileiro de Saberes e Expressões é uma associação civil de fins não econômicos qualificada para a gestão de recursos públicos e privados. Se você ou sua empresa desejam apoiar financeiramente nossa causa ou propor uma parceria institucional direta, entre em contato com nossa diretoria pelo e-mail principal:
+                    </p>
+                    <div class="donation-email-box">
+                        <span class="donation-email-text">contato@saberexpressoes.org</span>
+                    </div>
+                    <p class="donation-note">
+                        *Nota de Transparência: Em breve disponibilizaremos canais automáticos de doação recorrente e chave Pix direta após homologação do nosso plano de captação de recursos de 2026. Todos os apoios financeiros recebidos são integrados ao nosso Portal de Transparência e passam por prestação de contas anual sob regimento de auditoria independente.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer-wrapper">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>IBSE</h3>
+                <p class="footer-text-spacing">
+                    Instituto Brasileiro de Saberes e Expressões<br>
+                    Associação civil sem fins lucrativos de fomento sociocultural nacional.
+                </p>
+                <p class="footer-meta-text">
+                    CNPJ: 44.821.564/0001-38<br>
+                    Sede: Chácara 89, Conjunto H, Casa 02, Sol Nascente, Ceilândia - DF.
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Mapa do Site</h4>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="areas-atuacao.html">Áreas de Atuação</a></li>
+                    <li><a href="ponto-cultura.html">Ponto de Cultura</a></li>
+                    <li><a href="transparencia.html">Transparência</a></li>
+                    <li><a href="participe.html">Participe</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Canais</h4>
+                <ul>
+                    <li><a href="contato.html">Fale Conosco</a></li>
+                    <li><a href="contato.html#ouvidoria">Ouvidoria Geral</a></li>
+                    <li><a href="contato.html#denuncia">Canal de Denúncias</a></li>
+                    <li><a href="participe.html#voluntario">Trabalho Voluntário</a></li>
+                    <li><a href="participe.html#associado">Associação de Membros</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Instituto Brasileiro de Saberes e Expressões. Atividade regida pelo Estatuto Social e Regimento Interno vigentes.</p>
+            <div class="footer-bottom-links">
+                <a href="transparencia.html#estatuto">Estatuto Social</a>
+                <a href="transparencia.html#regimento">Regimento Interno</a>
+                <a href="contato.html#denuncia">Integridade</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Painel de Acessibilidade Flutuante -->
+    <section class="accessibility-bar" aria-label="Painel de Acessibilidade">
+        <button id="btn-contrast" class="accessibility-btn" title="Alternar Alto Contraste" aria-label="Alternar Alto Contraste">◐</button>
+        <button id="btn-text-plus" class="accessibility-btn" title="Aumentar Fonte" aria-label="Aumentar tamanho do texto">A+</button>
+        <button id="btn-text-minus" class="accessibility-btn" title="Diminuir Fonte" aria-label="Diminuir tamanho do texto">A-</button>
+        <button id="btn-reset" class="accessibility-btn" title="Redefinir Acessibilidade" aria-label="Redefinir para configurações padrão">↺</button>
+    </section>
+
+    <!-- Elemento para anúncios do leitor de tela -->
+    <div id="accessibility-announcer" class="sr-only" aria-live="polite"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
