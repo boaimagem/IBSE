@@ -1,4 +1,4 @@
-# Product
+﻿# Product
 
 ## Register
 
@@ -8,7 +8,7 @@ brand
 Moradores da comunidade de Ceilândia e região, parceiros institucionais, voluntários, doadores, órgãos públicos e privados interessados em projetos culturais, educativos e sociais.
 
 ## Product Purpose
-Apresentar de forma profissional, acessível e transparente o Instituto Brasileiro de Saberes e Expressões (IBSE), seus comitês técnicos, o Ponto de Cultura Filhos do Quilombo e os canais de integridade/ouvidoria.
+Apresentar de forma profissional, acessível e transparente o Instituto Brasileiro de Saberes e Expressões (IBASE), seus comitês técnicos, o Ponto de Cultura Filhos do Quilombo e os canais de integridade/ouvidoria.
 
 ## Brand Personality
 Acolhedora, Objetiva, Confiável, Contemporânea, Respeitosa. Mentor e Conector.

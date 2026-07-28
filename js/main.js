@@ -1,5 +1,5 @@
-/* 
-   IBSE - Instituto Brasileiro de Saberes e Expressões
+﻿/* 
+   IBASE - Instituto Brasileiro de Saberes e Expressões
    Core JS - Versão v1.0 (Design 2030)
    Controlador de interações do usuário e recursos de acessibilidade.
 */
@@ -29,8 +29,8 @@ function initAccessibility() {
     const bodyElement = document.body;
     
     // Carregar configurações salvas no localStorage
-    const savedContrast = localStorage.getItem('ibse-high-contrast');
-    const savedFontScale = localStorage.getItem('ibse-font-scale');
+    const savedContrast = localStorage.getItem('IBASE-high-contrast');
+    const savedFontScale = localStorage.getItem('IBASE-font-scale');
     
     if (savedContrast === 'true') {
         bodyElement.classList.add('high-contrast');
@@ -49,7 +49,7 @@ function initAccessibility() {
     if (btnContrast) {
         btnContrast.addEventListener('click', () => {
             const isHighContrast = bodyElement.classList.toggle('high-contrast');
-            localStorage.setItem('ibse-high-contrast', isHighContrast);
+            localStorage.setItem('IBASE-high-contrast', isHighContrast);
             announceToScreenReader(isHighContrast ? "Modo de alto contraste ativado." : "Modo de alto contraste desativado.");
         });
     }
@@ -60,7 +60,7 @@ function initAccessibility() {
             if (currentScale < 1.4) {
                 currentScale = parseFloat((currentScale + 0.1).toFixed(1));
                 htmlElement.style.setProperty('--font-scale', currentScale);
-                localStorage.setItem('ibse-font-scale', currentScale);
+                localStorage.setItem('IBASE-font-scale', currentScale);
                 announceToScreenReader(`Tamanho do texto aumentado para ${Math.round(currentScale * 100)}%.`);
             }
         });
@@ -72,7 +72,7 @@ function initAccessibility() {
             if (currentScale > 0.8) {
                 currentScale = parseFloat((currentScale - 0.1).toFixed(1));
                 htmlElement.style.setProperty('--font-scale', currentScale);
-                localStorage.setItem('ibse-font-scale', currentScale);
+                localStorage.setItem('IBASE-font-scale', currentScale);
                 announceToScreenReader(`Tamanho do texto reduzido para ${Math.round(currentScale * 100)}%.`);
             }
         });
@@ -82,8 +82,8 @@ function initAccessibility() {
         btnReset.addEventListener('click', () => {
             bodyElement.classList.remove('high-contrast');
             htmlElement.style.setProperty('--font-scale', 1.0);
-            localStorage.removeItem('ibse-high-contrast');
-            localStorage.removeItem('ibse-font-scale');
+            localStorage.removeItem('IBASE-high-contrast');
+            localStorage.removeItem('IBASE-font-scale');
             announceToScreenReader("Configurações de acessibilidade redefinidas para o padrão.");
         });
     }
@@ -182,7 +182,7 @@ function initAccordion() {
 const logoDetails = {
     tucano: {
         title: "Tucano (Patrimônio Natural & Salvaguarda)",
-        description: "Representa a riqueza ecológica brasileira, o respeito à fauna e a preservação ambiental. No IBSE, evoca a vigilância, o olhar atento sobre o território e a salvaguarda de nossas raízes e ecossistemas.",
+        description: "Representa a riqueza ecológica brasileira, o respeito à fauna e a preservação ambiental. No IBASE, evoca a vigilância, o olhar atento sobre o território e a salvaguarda de nossas raízes e ecossistemas.",
         colorClass: "bg-tucano"
     },
     chapeu: {
@@ -197,7 +197,7 @@ const logoDetails = {
     },
     livros: {
         title: "Livros (Educação, Literatura e Memória)",
-        description: "Evoca o conhecimento sistemático, o acesso às bibliotecas comunitárias, à qualificação profissional e à democratização do ensino. No IBSE, representa o método técnico e a formação de cidadãos.",
+        description: "Evoca o conhecimento sistemático, o acesso às bibliotecas comunitárias, à qualificação profissional e à democratização do ensino. No IBASE, representa o método técnico e a formação de cidadãos.",
         colorClass: "bg-livros"
     },
     periferia: {
@@ -324,7 +324,7 @@ function initFormHandlers() {
                             <strong>Relato enviado com sucesso!</strong><br>
                             Sua denúncia foi registrada sob o rito do Comitê de Ética.<br>
                             ${isAnonymous ? 'Como você optou pelo envio anônimo, guarde seu código para consultas futuras se aplicável.' : 'Enviamos uma confirmação de recebimento para o seu e-mail.'}<br>
-                            <strong>Número de Protocolo: IBSE-${protocol}</strong>
+                            <strong>Número de Protocolo: IBASE-${protocol}</strong>
                         `;
                     } else if (form.id === 'form-associado') {
                         feedback.innerHTML = `
@@ -340,7 +340,7 @@ function initFormHandlers() {
                     } else {
                         feedback.innerHTML = `
                             <strong>Inscrição de Voluntário concluída!</strong><br>
-                            Obrigado pelo seu interesse em fortalecer o IBSE.<br>
+                            Obrigado pelo seu interesse em fortalecer o IBASE.<br>
                             Nossa coordenação de projetos entrará em contato em breve para agendar seu acolhimento técnico.
                         `;
                     }
