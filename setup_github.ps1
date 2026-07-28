@@ -1,4 +1,4 @@
-﻿# Script de Configuraçao do Repositório Git e Upload para o GitHub - IBASE
+# Script de Configuraçao do Repositório Git e Upload para o GitHub - IBASE
 Clear-Host
 
 Write-Host "==========================================================" -ForegroundColor Green
@@ -55,7 +55,7 @@ git commit -m "Initial commit - IBASE Website"
 Write-Host "Arquivos adicionados e primeiro commit realizado!" -ForegroundColor Green
 
 # Obter URL do repositorio do usuario
-$repoUrl = Read-Host "`nPor favor, digite a URL do seu repositorio do GitHub (ex: https://github.com/usuario/repositorio.git)"
+$repoUrl = "git@github.com:boaimagem/IBSE.git"
 
 if (-not [string]::IsNullOrEmpty($repoUrl)) {
     # Remover remote anterior se existir

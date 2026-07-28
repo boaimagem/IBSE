@@ -1,10 +1,10 @@
-﻿# ============================================================
+# ============================================================
 # IBASE - Push para GitHub (git@github.com:boaimagem/IBASE.git)
 # Execute este script no PowerShell para publicar o site
 # ============================================================
 
 $ErrorActionPreference = "Stop"
-$sitePath = "X:\Drives compartilhados\Instituto Brasileiro de Saberes e Expressões\site"
+$sitePath = $PSScriptRoot
 
 Write-Host "`n=====================================" -ForegroundColor Cyan
 Write-Host "  IBASE - Deploy para GitHub" -ForegroundColor Cyan
@@ -24,7 +24,7 @@ if (-Not (Test-Path ".git")) {
 }
 
 # Configurar remote
-$remoteUrl = "git@github.com:boaimagem/IBASE.git"
+$remoteUrl = "git@github.com:boaimagem/IBSE.git"
 $existingRemote = git remote -v 2>&1
 if ($existingRemote -match "origin") {
     Write-Host "[3/6] Atualizando remote origin..." -ForegroundColor Yellow
