@@ -80,4 +80,3 @@ Write-Host "`nRepositório: https://github.com/boaimagem/IBASE" -ForegroundColor
 Write-Host "O Cloudflare Pages irá detectar a atualização e publicar automaticamente." -ForegroundColor Cyan
 Write-Host "Acesse: https://saberexpressoes.org em alguns minutos.`n" -ForegroundColor Cyan
 
-Read-Host "Pressione Enter para fechar"
